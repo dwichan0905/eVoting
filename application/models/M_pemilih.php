@@ -13,7 +13,7 @@ class M_pemilih extends CI_Model
 	function insert_data()
 	{
 		$field = array(
-			'id' => date("yyyyMMddHHmmss"),
+			'id' => date("YmdHis"), // kepanjangan kwkw
 			'nim' => $this->db->escape_str($this->input->post('nim', true)),
 			'password' => md5($this->db->escape_str($this->input->post('password', true))),
 			'nama' => $this->db->escape_str($this->input->post('nama', true)),

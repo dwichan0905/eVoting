@@ -3,7 +3,7 @@ class Database{
   
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "evoting";
+    private $db_name = "e_voting";
     private $username = "root";
     private $password = "";
     public $conn;
